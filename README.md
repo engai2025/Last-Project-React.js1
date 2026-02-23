@@ -10,24 +10,25 @@
   
   ***
   
-  [GitHub Link](https://github.com/engai2025/React-Exercise-26)
+  [GitHub Link]( https://github.com/engai2025/Last-Project-React.js1)
   
   ***
   
   ## Code
 
-    ### Dashboard.jsx
+ 
+    ### Dashbord.jsx
   
   ```jsx
-import { Link } from 'react-router-dom';
+  import { Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 
-const personUser = {
+const persinUser = {
   name: 'Eng Omar Tood',
   email: 'omarjibrilabdikadir@gmail.com',
 };
 
-const personUser = [
+const OurOrders = [
   { id: 'ORD-001', date: 'Feb 22, 2026', total: 1599.98, status: 'Delivered', items: 2 },
   { id: 'ORD-002', date: 'Feb 15, 2026', total: 349.99, status: 'Delivered', items: 1 },
   { id: 'ORD-003', date: 'Feb 10, 2026', total: 2299.98, status: 'Delivered', items: 2 },
@@ -38,16 +39,16 @@ export default function Dashboard() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-   
+     
       <div className="flex items-center gap-4 mb-10">
         <div className="w-14 h-14 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center font-display font-bold text-xl">
-          {personUser.name.charAt(0)}
+          {persinUser.name.charAt(0)}
         </div>
         <div>
           <h1 className="font-display text-2xl font-bold text-gray-900">
-            Hello, {personUser.name}
+            Hello, {persinUser.name}
           </h1>
-          <p className="text-gray-500 text-sm">{personUser.email}</p>
+          <p className="text-gray-500 text-sm">{persinUser.email}</p>
         </div>
       </div>
 
@@ -69,7 +70,7 @@ export default function Dashboard() {
             </div>
             <span className="w-12 h-12 rounded-xl bg-primary-50 text-primary-600 flex items-center justify-center">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3  " />
               </svg>
             </span>
           </div>
@@ -87,13 +88,14 @@ export default function Dashboard() {
             </div>
             <span className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9  " />
               </svg>
             </span>
           </div>
         </div>
       </div>
- 
+
+    
       <section>
         <h2 className="font-display text-lg font-semibold text-gray-900 mb-4">
           Order history
@@ -124,7 +126,7 @@ export default function Dashboard() {
         </p>
       </section>
 
-   
+  
       <div className="mt-10 text-center">
         <Link
           to="/shop"
@@ -139,6 +141,9 @@ export default function Dashboard() {
     </div>
   );
 }
+  
+  ```jsx
+   
 
   ```
   
@@ -1172,12 +1177,12 @@ export default function Cart() {
   import { Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 
-const mockUser = {
+const persinUser = {
   name: 'Eng Omar Tood',
   email: 'omarjibrilabdikadir@gmail.com',
 };
 
-const mockOrders = [
+const OurOrders = [
   { id: 'ORD-001', date: 'Feb 22, 2026', total: 1599.98, status: 'Delivered', items: 2 },
   { id: 'ORD-002', date: 'Feb 15, 2026', total: 349.99, status: 'Delivered', items: 1 },
   { id: 'ORD-003', date: 'Feb 10, 2026', total: 2299.98, status: 'Delivered', items: 2 },
@@ -1191,13 +1196,13 @@ export default function Dashboard() {
      
       <div className="flex items-center gap-4 mb-10">
         <div className="w-14 h-14 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center font-display font-bold text-xl">
-          {mockUser.name.charAt(0)}
+          {persinUser.name.charAt(0)}
         </div>
         <div>
           <h1 className="font-display text-2xl font-bold text-gray-900">
-            Hello, {mockUser.name}
+            Hello, {persinUser.name}
           </h1>
-          <p className="text-gray-500 text-sm">{mockUser.email}</p>
+          <p className="text-gray-500 text-sm">{persinUser.email}</p>
         </div>
       </div>
 
@@ -1219,7 +1224,7 @@ export default function Dashboard() {
             </div>
             <span className="w-12 h-12 rounded-xl bg-primary-50 text-primary-600 flex items-center justify-center">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3  " />
               </svg>
             </span>
           </div>
@@ -1231,13 +1236,13 @@ export default function Dashboard() {
             <div>
               <p className="text-sm font-medium text-gray-500">Total orders</p>
               <p className="mt-1 font-display font-semibold text-gray-900">
-                {mockOrders.length} orders
+                {ourOrders.length} orders
               </p>
               <p className="text-emerald-600 text-sm font-medium mt-0.5">All delivered</p>
             </div>
             <span className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9  " />
               </svg>
             </span>
           </div>
@@ -1250,7 +1255,7 @@ export default function Dashboard() {
           Order history
         </h2>
         <div className="space-y-3">
-          {mockOrders.map((order) => (
+          {ourOrders.map((order) => (
             <div
               key={order.id}
               className="flex flex-wrap items-center justify-between gap-3 p-4 rounded-2xl bg-white border border-gray-200 hover:border-gray-300 transition-colors"
